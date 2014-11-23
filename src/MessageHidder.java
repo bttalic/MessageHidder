@@ -25,11 +25,11 @@ public class MessageHidder {
 			encodeOrDecode = Integer.parseInt(in.nextLine());
 			System.out.println("Enter path:");
 			path = in.nextLine();
-			System.out.println("Path: " + path);
 			if (encodeOrDecode == 1) {
 				System.out.println("Enter message: ");
 				message = in.nextLine();
 			}
+			in.close();
 		} else {
 			encodeOrDecode = Integer.parseInt(args[0]);
 			path = args[1];
